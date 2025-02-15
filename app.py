@@ -87,7 +87,7 @@ openai_api_chat  = "http://aiproxy.sanand.workers.dev/openai/v1/chat/completions
 openai_api_key = os.getenv("AIPROXY_TOKEN")
 
 headers = {
-    "Authorization":  f"Bearer {openai_api_key}",
+    "Authorization": f"Bearer {openai_api_key}",
     "Content-Type": "application/json",
 }
 
@@ -111,8 +111,8 @@ function_definitions_llm = [
         "parameters": {
             "type": "object",
             "properties": {
-                "prettier_version": {"type": "string", "pattern": r"prettier@[0-9]+\\.[0-9]+\\.[0-9]+"},
-                "filename": {"type": "string", "pattern": "^(.*[\\\\/])?.*\\.md$"}
+                "prettier_version": {"type": "string", "pattern": r"prettier@\d+\.\d+\.\d+"},
+                "filename": {"type": "string", "pattern": r".*/(.*\.md)"}
             },
             "required": ["prettier_version", "filename"]
         }
