@@ -87,7 +87,7 @@ openai_api_chat  = "http://aiproxy.sanand.workers.dev/openai/v1/chat/completions
 openai_api_key = os.getenv("AIPROXY_TOKEN")
 
 headers = {
-    "Authorization": f"Bearer {openai_api_key}",
+    "Authorization": f"Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjIwMDE0ODFAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.v0Xv2e27LYcAycnU1uJIklIKDbkmdtGg7ywsFB-O9Yw ",
     "Content-Type": "application/json",
 }
 
